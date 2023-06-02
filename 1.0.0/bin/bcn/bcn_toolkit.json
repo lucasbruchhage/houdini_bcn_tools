@@ -1,0 +1,16 @@
+{
+    "path": "$BCN",
+    "load_package_once": true,
+
+    "env": [
+
+        {
+            "BCN": {
+                "method": "prepend",
+                "value": [
+                    "$ROOT/00_pipeline/03_various/01_plugins/bcn"
+                ]
+            }
+        }
+    ]
+}

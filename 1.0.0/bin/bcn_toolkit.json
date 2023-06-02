@@ -1,0 +1,14 @@
+{
+    "path": "$BCN",
+    "load_package_once": true,
+
+    "env":
+    [
+        {"BCN" : "/mnt/studio/pipeline/packages/houdini_bcn_tools/1.0.0/bin/bcn"},
+        {"BCNLIB":"/mnt/production/project/library"},
+	{"BCNASSET":"/mnt/production/assets"}
+    ]
+
+}
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <toolshelf name="bcn" label="BCN Toolkit">
+    <memberTool name="saveversion"/>
+    <memberTool name="make_daily"/>
+    <memberTool name="getSize"/>
+    <memberTool name="label_picker"/>
+  </toolshelf>
+
+  <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
+    <helpText><![CDATA[save a new version of the scene file]]></helpText>
+    <script scriptType="python"><![CDATA[from bcn import save_version
+from importlib import reload
+reload(save_version)
+#daily_maker.reload
+save_version.go()]]></script>
+    <keywordList>
+      <keyword>save version</keyword>
+    </keywordList>
+  </tool>
+
+  <tool name="make_daily" label="Make Daily" icon="$BCN/config/bcn_white_x_logo.svg">
+    <script scriptType="python"><![CDATA[from bcn import daily_maker
+from importlib import reload
+reload(daily_maker)
+#daily_maker.reload
+daily_maker.go()]]></script>
+  </tool>
+
+  <tool name="getSize" label="Disk Space" icon="$BCN/config/bcn_white_x_logo.svg">
+    <script scriptType="python"><![CDATA[from bcn import get_size
+from importlib import reload
+reload(get_size)
+#daily_maker.reload
+]]></script>
+    <keywordList>
+      <keyword>getSize</keyword>
+    </keywordList>
+  </tool>
+
+  <tool name="label_picker" label="Label Picker" icon="$BCN/config/bcn_white_x_logo.svg">
+    <script scriptType="python"><![CDATA[from bcn import label_picker
+from importlib import reload
+reload(label_picker)
+#daily_maker.reload]]></script>
+  </tool>
+</shelfDocument>
