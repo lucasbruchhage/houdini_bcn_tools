@@ -11,3 +11,5 @@ def commands():
     env.PYTHONPATH.append("{root}/bin/scripts")
     env.HOUDINI_PACKAGE_DIR.append("{root}/bin")
 
+
+build_command = "cp -r {root} $REZ_LOCAL_PACKAGES_PATH/{name}/{version}"

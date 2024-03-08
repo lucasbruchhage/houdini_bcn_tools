@@ -6,7 +6,7 @@
     [
         {"BCN" : "/mnt/studio/pipeline/packages/houdini_bcn_tools/1.0.1/bin/bcn"},
         {"BCNLIB":"/mnt/production/project/library"},
-	{"BCNASSET":"/mnt/production/assets"}
+	    {"BCNASSET":"/mnt/production/assets"}
     ]
 
 }
