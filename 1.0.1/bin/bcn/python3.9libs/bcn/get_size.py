@@ -19,8 +19,8 @@ def get_size(path):
     
 
 #------------------------- MAIN -----------------------------    
-scratch_size = (get_size('/mnt/production/scratch'))
+scratch_size = (get_size('/mnt/production/project'))
 user_size = (get_size('/mnt/production/user'))
 
-message = ("----FREE SPACE----" + "\n" + "SCRATCH: " + scratch_size + " TB" + "\n" "USER: " + user_size + " TB")
+message = ("----FREE SPACE----" + "\n" + "PROJECT: " + scratch_size + " TB" + "\n" "USER: " + user_size + " TB")
 hou.ui.displayMessage(message)
