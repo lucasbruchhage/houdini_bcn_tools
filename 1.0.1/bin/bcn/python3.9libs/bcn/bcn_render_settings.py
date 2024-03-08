@@ -51,6 +51,11 @@ def go():
     getParam = selectedNode.parm("AbortOnHoudiniCookingError")
     getParam.set(True)
 
+    getParam = selectedNode.parm("RS_aovGetFromNode")
+    getParam.set("../BCN_AOV")
+
+
+
 
 
 
