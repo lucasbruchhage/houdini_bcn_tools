@@ -6,6 +6,7 @@ import random
 import datetime
 import webbrowser
 import time
+import json
 
 
 def go():
@@ -51,8 +52,55 @@ def go():
     getParam = selectedNode.parm("AbortOnHoudiniCookingError")
     getParam.set(True)
 
-    getParam = selectedNode.parm("RS_aovGetFromNode")
-    getParam.set("../BCN_AOV")
+    #getParam = selectedNode.parm("RS_aovGetFromNode")
+    #getParam.set("../BCN_AOV")
+
+    
+    # getParam = selectedNode.parm("RS_aov")
+    # getParam.insertMultiParmInstance(0)
+    # getParam = selectedNode.parm("RS_aovID_1")
+    # getParam.set(5)
+    # getParam = selectedNode.parm("RS_aovMaterialDenoise_1")
+    # getParam.set(True)
+
+    # getParam = selectedNode.parm("RS_aov")
+    # getParam.insertMultiParmInstance(1)
+    # getParam = selectedNode.parm("RS_aovID_2")
+    # getParam.set(7)
+    # getParam = selectedNode.parm("RS_aovMaterialDenoise_2")
+    # getParam.set(True)
+
+
+    multiParm = selectedNode.parm("RS_aov")
+    multiParm.set(0)
+    file_dir = "/mnt/studio/pipeline/packages/houdini_bcn_tools/1.0.1/bin/bcn/python3.9libs/bcn/aov_base.json"
+    data = {}
+    with open(file_dir) as outfile:
+        data = json.load(outfile)
+
+    blocks = data["aovs"]
+    for i in range(len(blocks)):
+        multiParm.insertMultiParmInstance(i)
+
+        for name, value in blocks[i].items():
+            selectedNode.parm(name).set(value)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
