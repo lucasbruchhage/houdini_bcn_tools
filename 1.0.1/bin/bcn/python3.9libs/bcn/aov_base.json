@@ -79,19 +79,24 @@
             "RS_aovSuffix_16": "cryptomatteObj",
             "RS_aovID_16": 41,
             "RS_aovMaterialDenoise_16": 1,
-            "RS_aovCryptomatteDepth_1": 0
+            "RS_aovCryptomatteType_16": 0
         },
         {
             "RS_aovSuffix_17": "cryptomatteMat",
             "RS_aovID_17": 41,
             "RS_aovMaterialDenoise_17": 1,
-            "RS_aovCryptomatteDepth_17": 1
+            "RS_aovCryptomatteType_17": 1
         },
         {
             "RS_aovSuffix_18": "uv",
             "RS_aovID_18": 38,
             "RS_aovMaterialDenoise_18": 1,
             "RS_aovCustomShader_18": "../BCN_custom_AOV/uv"
+        },
+        {
+            "RS_aovSuffix_19": "beauty",
+            "RS_aovID_19": 39,
+            "RS_aovMaterialDenoise_19": 1
         }
     ]
 }
