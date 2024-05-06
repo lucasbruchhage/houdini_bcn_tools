@@ -94,9 +94,10 @@
             "RS_aovCustomShader_18": "../BCN_custom_AOV/uv"
         },
         {
-            "RS_aovSuffix_19": "beauty",
+            "RS_aovSuffix_19": "beauty_aux",
             "RS_aovID_19": 39,
-            "RS_aovMaterialDenoise_19": 1
+            "RS_aovMaterialDenoise_19": 1,
+            "RS_aovCustomDT_19": 1
         }
     ]
 }

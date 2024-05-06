@@ -47,7 +47,7 @@ def go():
 
     #set Parms Lop Import Node
     getPrimPattern = newLopImport.parm("primpattern")
-    getPrimPattern.set("%type:Mesh")
+    getPrimPattern.set("%type:Mesh & %visible")
 
 
     #popup ask multi input

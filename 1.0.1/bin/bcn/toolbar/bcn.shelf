@@ -14,6 +14,7 @@
     <memberTool name="HdaLookdev"/>
     <memberTool name="apply_look"/>
     <memberTool name="bcn_render_settings"/>
+    <memberTool name="CheckTextureVersion"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
@@ -1307,6 +1308,16 @@ reload(bcn_render_settings)
 bcn_render_settings.go()]]></script>
     <keywordList>
       <keyword>apply render settings</keyword>
+    </keywordList>
+  </tool>
+
+  <tool name="CheckTextureVersion" label="Check Texture Version" icon="$BCN/config/bcn_white_x_logo.svg">
+    <script scriptType="python"><![CDATA[from bcn import check_texture_version
+from importlib import reload
+reload(check_texture_version)
+check_texture_version.go()]]></script>
+    <keywordList>
+      <keyword>CheckTextureVersion</keyword>
     </keywordList>
   </tool>
 </shelfDocument>

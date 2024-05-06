@@ -77,7 +77,7 @@ def go():
     getLopPath = newLopImport.parm("loppath")
     getLopPath.set(nodesPicked)
     getPrimPattern = newLopImport.parm("primpattern")
-    getPrimPattern.set("%type:Mesh")
+    getPrimPattern.set("%type:Mesh & %visible")
 
 
     #set Parms obj merge
