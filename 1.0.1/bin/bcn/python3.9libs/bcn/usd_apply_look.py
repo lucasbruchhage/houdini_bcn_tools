@@ -89,7 +89,15 @@ def go():
     #set Parms AttCopy
     getAttName = newAttCopy.parm("attribname")
     getAttName.set("shop_materialpath")
-    
+    getAttName = newAttCopy.parm("srcgrouptype")
+    getAttName.set(2)
+    getAttName = newAttCopy.parm("destgrouptype")
+    getAttName.set(2)
+    getAttName = newAttCopy.parm("matchbyattribute")
+    getAttName.set(1)
+    getAttName = newAttCopy.parm("attributetomatch")
+    getAttName.set("name")
+
 
     #move selected nodes to internal LopNet
     hou.moveNodesTo(nodes, newLopNet)

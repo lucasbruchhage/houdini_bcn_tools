@@ -15,6 +15,8 @@
     <memberTool name="apply_look"/>
     <memberTool name="bcn_render_settings"/>
     <memberTool name="CheckTextureVersion"/>
+    <memberTool name="copyNodeSettings"/>
+    <memberTool name="pasteNodeSettings"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
@@ -1319,5 +1321,19 @@ check_texture_version.go()]]></script>
     <keywordList>
       <keyword>CheckTextureVersion</keyword>
     </keywordList>
+  </tool>
+
+  <tool name="copyNodeSettings" label="Copy Node Settings" icon="$BCN/config/bcn_white_x_logo.svg">
+    <script scriptType="python"><![CDATA[from bcn import copy_node_settings
+from importlib import reload
+reload(copy_node_settings)
+copy_node_settings.go()]]></script>
+  </tool>
+
+  <tool name="pasteNodeSettings" label="Paste Node Settings" icon="$BCN/config/bcn_white_x_logo.svg">
+    <script scriptType="python"><![CDATA[from bcn import paste_node_settings
+from importlib import reload
+reload(paste_node_settings)
+paste_node_settings.apply_parameters()]]></script>
   </tool>
 </shelfDocument>
