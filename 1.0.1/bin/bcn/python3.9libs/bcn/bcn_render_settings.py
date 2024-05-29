@@ -53,7 +53,7 @@ def go():
     getParam.set(True)
 
     getParam = selectedNode.parm("RS_outputMultilayerMode")
-    getParam.set("Full Multi-Layered EXR File")
+    getParam.revertToDefaults()
 
     getParam = selectedNode.parm("RS_aovMultipart")
     getParam.set(True)
