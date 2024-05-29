@@ -52,6 +52,13 @@ def go():
     getParam = selectedNode.parm("AbortOnHoudiniCookingError")
     getParam.set(True)
 
+    getParam = selectedNode.parm("RS_outputMultilayerMode")
+    getParam.set("Full Multi-Layered EXR File")
+
+    getParam = selectedNode.parm("RS_aovMultipart")
+    getParam.set(True)
+
+
     #getParam = selectedNode.parm("RS_aovGetFromNode")
     #getParam.set("../BCN_AOV")
 
