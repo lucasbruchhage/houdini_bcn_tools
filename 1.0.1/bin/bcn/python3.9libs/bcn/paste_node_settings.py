@@ -45,7 +45,7 @@ def apply_parameters():
         node = selected_nodes[0]
 
         # Parameters to ignore
-        ignored_params = {"id", "productType", "active", "creator_identifier", "creator_identifier", "folderPath", "task", "creator_attributes", "publish_attributes", "AYON_productName", "RS_outputFileNamePrefix", "RS_archive_file"}
+        ignored_params = {"id", "productType", "active", "creator_identifier", "folderPath", "task", "creator_attributes", "publish_attributes", "AYON_productName", "RS_outputFileNamePrefix", "RS_archive_file"}
 
         # Apply parameters to the selected node
         for parm_name, parm_value in parm_dict.items():
