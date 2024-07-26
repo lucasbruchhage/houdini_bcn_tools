@@ -17,6 +17,7 @@
     <memberTool name="CheckTextureVersion"/>
     <memberTool name="copyNodeSettings"/>
     <memberTool name="pasteNodeSettings"/>
+    <memberTool name="ScreenLibrary"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
