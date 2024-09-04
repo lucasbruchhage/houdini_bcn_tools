@@ -98,6 +98,24 @@
             "RS_aovID_19": 39,
             "RS_aovMaterialDenoise_19": 1,
             "RS_aovCustomDT_19": 1
+        },
+        {
+            "RS_aovSuffix_20": "diffuseRAW",
+            "RS_aovID_20": 6,
+            "RS_aovMaterialDenoise_20": 1,
+            "RS_aovCustomDT_20": 1
+        },
+        {
+            "RS_aovSuffix_21": "bN",
+            "RS_aovID_21": 25,
+            "RS_aovMaterialDenoise_21": 1,
+            "RS_aovCustomDT_21": 1
+        },
+        {
+            "RS_aovSuffix_22": "N",
+            "RS_aovID_22": 24,
+            "RS_aovMaterialDenoise_22": 1,
+            "RS_aovCustomDT_22": 1
         }
     ]
 }
