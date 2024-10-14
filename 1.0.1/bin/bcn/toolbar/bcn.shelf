@@ -18,6 +18,7 @@
     <memberTool name="copyNodeSettings"/>
     <memberTool name="pasteNodeSettings"/>
     <memberTool name="ScreenLibrary"/>
+    <memberTool name="AYON_Path_fix"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
@@ -1336,5 +1337,12 @@ copy_node_settings.go()]]></script>
 from importlib import reload
 reload(paste_node_settings)
 paste_node_settings.apply_parameters()]]></script>
+  </tool>
+
+  <tool name="AYON_Path_fix" label="AYON_Path_fix" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[from bcn import ayonrenderpath_hotfix
+from importlib import reload
+reload(ayonrenderpath_hotfix)
+ayonrenderpath_hotfix.go()]]></script>
   </tool>
 </shelfDocument>
