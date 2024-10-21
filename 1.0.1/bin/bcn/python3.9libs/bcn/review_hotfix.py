@@ -6,7 +6,7 @@ def go():
 
     # Iterate through each selected node
     for node in selected_nodes:
-        node.parm("picture").set("$HIP/pyblish/rs/$OS/$OS.$F4.png")
+        node.parm("picture").set("$HIP/pyblish/$OS/$OS.$F4.png")
         node.parm("variant").set("$OS")
         node.parm("AYON_productName").set("$OS")
         node.parm("folderPath").set("$AYON_FOLDER_PATH")
