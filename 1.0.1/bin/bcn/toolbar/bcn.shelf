@@ -19,6 +19,7 @@
     <memberTool name="pasteNodeSettings"/>
     <memberTool name="AYON_Path_fix"/>
     <memberTool name="Review Hotfix"/>
+    <memberTool name="FileCache Hotfix"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
