@@ -20,6 +20,7 @@
     <memberTool name="AYON_Path_fix"/>
     <memberTool name="Review Hotfix"/>
     <memberTool name="FileCache Hotfix"/>
+    <memberTool name="Write_Camera_Parameters"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
@@ -1352,5 +1353,12 @@ ayonrenderpath_hotfix.go()]]></script>
 from importlib import reload
 reload(review_hotfix)
 review_hotfix.go()]]></script>
+  </tool>
+
+  <tool name="Write_Camera_Parameters" label="Write Camera Parameters" icon="PLASMA_App">
+    <script scriptType="python"><![CDATA[from bcn import write_camera_json
+from importlib import reload
+reload(write_camera_json)
+write_camera_json]]></script>
   </tool>
 </shelfDocument>
