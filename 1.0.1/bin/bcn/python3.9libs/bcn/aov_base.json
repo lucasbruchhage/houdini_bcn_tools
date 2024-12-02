@@ -106,16 +106,16 @@
             "RS_aovCustomDT_20": 1
         },
         {
-            "RS_aovSuffix_21": "bN",
-            "RS_aovID_21": 25,
+            "RS_aovSuffix_21": "N",
+            "RS_aovID_21": 38,
             "RS_aovMaterialDenoise_21": 1,
-            "RS_aovCustomDT_21": 1
+            "RS_aovCustomShader_21": "../BCN_custom_AOV/Ncam"
         },
         {
-            "RS_aovSuffix_22": "N",
-            "RS_aovID_22": 24,
+            "RS_aovSuffix_22": "AO",
+            "RS_aovID_22": 38,
             "RS_aovMaterialDenoise_22": 1,
-            "RS_aovCustomDT_22": 1
+            "RS_aovCustomShader_22": "../BCN_custom_AOV/AO"
         }
     ]
 }

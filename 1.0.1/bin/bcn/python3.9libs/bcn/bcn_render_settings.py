@@ -92,22 +92,43 @@ def go():
         for name, value in blocks[i].items():
             selectedNode.parm(name).set(value)
 
+    add_custom_aov()
 
 
+def add_custom_aov():
 
+    # Define the gallery preset name
+    preset_name = 'BCN_custom_AOV'
 
+    # Access the user gallery path
+    gallery_path = "/mnt/studio/pipeline/packages/houdini_bcn_tools/1.0.1/bin/bcn/gallery"
 
+    # Define Context
+    out_context = hou.node("/out")
 
-
-
-
-
+    # Create a new node, for example, a 'geometry' node
+    new_node = out_context.createNode('geometry', 'BCN_custom_AOV')
 
 
 
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 
