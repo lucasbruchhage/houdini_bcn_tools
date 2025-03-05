@@ -2,7 +2,10 @@ import json
 import os
 import hou
 
-def save_node_parameters_as_json(output_directory='/home/lucas.bruchhage@internal.bcnvisuals.com/Desktop', file_name='camera_parameters.json'):
+homedir = hou.getenv("HOME") + "/Desktop"
+
+
+def save_node_parameters_as_json(output_directory= homedir, file_name='camera_parameters.json'):
     # Get the currently selected node
     selected_nodes = hou.selectedNodes()
 
