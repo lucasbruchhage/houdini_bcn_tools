@@ -16,8 +16,8 @@
     <memberTool name="bcn_render_settings"/>
     <memberTool name="CheckTextureVersion"/>
     <memberTool name="copyNodeSettings"/>
-    <memberTool name="pasteNodeSettings"/>
     <memberTool name="AYON_Path_fix"/>
+    <memberTool name="pasteNodeSettings"/>
     <memberTool name="Review Hotfix"/>
     <memberTool name="FileCache Hotfix"/>
     <memberTool name="Write_Camera_Parameters"/>
