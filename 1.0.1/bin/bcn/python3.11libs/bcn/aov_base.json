@@ -117,5 +117,6 @@
             "RS_aovMaterialDenoise_22": 1,
             "RS_aovCustomShader_22": "../BCN_custom_AOV/AO"
         }
+       
     ]
 }
