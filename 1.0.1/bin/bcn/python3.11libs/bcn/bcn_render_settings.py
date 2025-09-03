@@ -92,7 +92,7 @@ def go():
         for name, value in blocks[i].items():
             selectedNode.parm(name).set(value)
 
-    add_custom_aov()
+    #add_custom_aov()
 
 
 def add_custom_aov():

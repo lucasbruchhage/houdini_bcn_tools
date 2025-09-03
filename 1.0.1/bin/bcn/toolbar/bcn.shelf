@@ -23,6 +23,7 @@
     <memberTool name="Write_Camera_Parameters"/>
     <memberTool name="Screen_Export_ROPS"/>
     <memberTool name="Prep_Screen"/>
+    <memberTool name="Export_RS_AOVs"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
