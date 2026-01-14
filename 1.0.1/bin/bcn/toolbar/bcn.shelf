@@ -6,11 +6,7 @@
  a single file. -->
 
   <toolshelf name="bcn" label="BCN Toolkit">
-    <memberTool name="saveversion"/>
-    <memberTool name="make_daily"/>
     <memberTool name="getSize"/>
-    <memberTool name="label_picker"/>
-    <memberTool name="lookdevscene"/>
     <memberTool name="HdaLookdev"/>
     <memberTool name="apply_look"/>
     <memberTool name="bcn_render_settings"/>
@@ -19,11 +15,9 @@
     <memberTool name="AYON_Path_fix"/>
     <memberTool name="pasteNodeSettings"/>
     <memberTool name="Review Hotfix"/>
-    <memberTool name="FileCache Hotfix"/>
     <memberTool name="Write_Camera_Parameters"/>
     <memberTool name="Screen_Export_ROPS"/>
     <memberTool name="Prep_Screen"/>
-    <memberTool name="Export_RS_AOVs"/>
   </toolshelf>
 
   <tool name="saveversion" label="Save Version" icon="$BCN/config/bcn_white_x_logo.svg">
@@ -1290,10 +1284,10 @@ hou.hscript(h_preamble + h_extra_args + h_cmd)
   </tool>
 
   <tool name="HdaLookdev" label="HDA Lookdev" icon="$BCN/config/bcn_white_x_logo.svg">
-    <script scriptType="python"><![CDATA[from bcn import usd_hda_lookdev
+    <script scriptType="python"><![CDATA[from bcn import abc_hda_lookdev
 from importlib import reload
-reload(usd_hda_lookdev)
-usd_hda_lookdev.go()]]></script>
+reload(abc_hda_lookdev)
+abc_hda_lookdev.go()]]></script>
     <keywordList>
       <keyword>HDA</keyword>
       <keyword>Lookdev</keyword>

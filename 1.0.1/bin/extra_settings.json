@@ -1,0 +1,6 @@
+{
+    "env": [
+        { "HOUDINI_USE_OLD_INFO_WINDOW": 1 }
+    ]
+}
+
