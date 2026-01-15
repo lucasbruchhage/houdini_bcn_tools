@@ -94,7 +94,7 @@ def go():
     getAttName = newAttCopy.parm("matchbyattribute")
     getAttName.set(1)
     getAttName = newAttCopy.parm("attributetomatch")
-    getAttName.set("path")
+    getAttName.set("name")
 
 
     #set names
