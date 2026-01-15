@@ -42,7 +42,7 @@ def go():
     newObjectMerge = newGeoNode.createNode("object_merge")
     newAttCopy = newGeoNode.createNode("attribcopy")
     newOut = newGeoNode.createNode("output")
-    newLopNet = newGeoNode.createNode("lopnet")
+    #newLopNet = newGeoNode.createNode("lopnet")
     newPointVel = newGeoNode.createNode("pointvelocity")
 
 
