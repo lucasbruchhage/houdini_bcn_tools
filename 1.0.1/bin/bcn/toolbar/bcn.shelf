@@ -1295,10 +1295,10 @@ abc_hda_lookdev.go()]]></script>
   </tool>
 
   <tool name="apply_look" label="Apply Look" icon="$BCN/config/bcn_white_x_logo.svg">
-    <script scriptType="python"><![CDATA[from bcn import usd_apply_look
+    <script scriptType="python"><![CDATA[from bcn import abc_apply_look
 from importlib import reload
-reload(usd_apply_look)
-usd_apply_look.go()]]></script>
+reload(abc_apply_look)
+abc_apply_look.go()]]></script>
     <keywordList>
       <keyword>apply look</keyword>
     </keywordList>

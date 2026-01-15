@@ -62,7 +62,7 @@ def go():
 
 
     #set Object Merge Path
-    nodesPicked = "../../../AYON_CONTAINERS/" + str(nodes[0])
+    nodesPicked = "/obj/AYON_CONTAINERS/" + str(nodes[0])
     getObjPath = newObjMerge.parm("objpath1")
     getObjPath.set(nodesPicked)
     
