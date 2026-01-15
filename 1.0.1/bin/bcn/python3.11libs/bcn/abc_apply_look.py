@@ -37,6 +37,9 @@ def go():
 
     #create nodes
     newGeoNode = obj.createNode("geo")
+    newBlastNode = newGeoNode.createNode("blast")
+    newAttribWrangleA = newGeoNode.createNode("attribwrangle")
+    newAttribWrangleB = newGeoNode.createNode("attribwrangle")
     newLopImport = newGeoNode.createNode("object_merge")
     newTransform = newGeoNode.createNode("xform")
     newObjectMerge = newGeoNode.createNode("object_merge")
@@ -49,9 +52,19 @@ def go():
     #connect nodes
     newOut.setInput(0, newPointVel)
     newPointVel.setInput(0, newAttCopy)
-    newAttCopy.setInput(0, newTransform)
+    newAttCopy.setInput(0, newAttribWrangleA)
+    newAttCopy.setInput(1, newAttribWrangleB)
+    newAttribWrangleA.setInput(0, newBlastNode)
+    newBlastNode.setInput(0, newTransform)
     newTransform.setInput(0, newLopImport)
-    newAttCopy.setInput(1, newObjectMerge)
+    newAttribWrangleB.setInput(0, newObjectMerge)
+    
+
+
+
+
+
+
 
 
     #layout nodes
@@ -95,6 +108,22 @@ def go():
     getAttName.set(1)
     getAttName = newAttCopy.parm("attributetomatch")
     getAttName.set("name")
+    getAttName = newBlastNode.parm("group")
+    getAttName.set("@path=*CTRL*")
+
+    getAttName = newAttribWrangleA.parm("snippet")
+    vex_code = """\
+        string parts[] = split(s@path, "/");
+        s@name = parts[len(parts) - 1];
+        """
+    getAttName.set(vex_code)
+
+    getAttName = newAttribWrangleB.parm("snippet")
+    getAttName.set(vex_code)
+    getAttName = newAttribWrangleB.parm("class")
+    getAttName.set(1)
+    getAttName = newAttribWrangleA.parm("class")
+    getAttName.set(1)
 
 
     #set names
